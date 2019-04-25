@@ -1,0 +1,139 @@
+{
+	"info": {
+		"_postman_id": "3ae3fd30-676d-42b0-af71-b1a7b3c058ab",
+		"name": "Redis API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "create_cart",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:5000/cart/123",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"cart",
+						"123"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "add_product_to_cart",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"product_id\": 456\n}"
+				},
+				"url": {
+					"raw": "http://localhost:5000/cart/123/products",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"cart",
+						"123",
+						"products"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete_product_from_cart",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:5000/cart/123/products/456",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"cart",
+						"123",
+						"products",
+						"456"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get_cart",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:5000/cart/123",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"cart",
+						"123"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete_cart",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:5000/cart/123",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"cart",
+						"123"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
