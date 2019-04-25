@@ -2,7 +2,7 @@ from flask import Flask, jsonify, request
 import redis
 
 app = Flask(__name__)
-r = redis.Redis(host='192.168.99.100', port=6379, decode_responses=True)
+r = redis.Redis(host='database', port=6379, decode_responses=True)
 
 
 @app.route('/cart/<int:user_id>', methods=['POST'])
