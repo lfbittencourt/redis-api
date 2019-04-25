@@ -26,7 +26,7 @@ The port remains the same (5000) no matter which installation you have made.
 
 Creates a cart. No body required. Example response:
 
-```
+```json
 []
 ```
 
@@ -34,7 +34,7 @@ Creates a cart. No body required. Example response:
 
 Adds a product to the cart. Example post body:
 
-```
+```json
 {
     "product_id": 456
 }
@@ -42,7 +42,7 @@ Adds a product to the cart. Example post body:
 
 Example response:
 
-```
+```json
 [
     123,
     456
@@ -53,7 +53,7 @@ Example response:
 
 Gets the cart. Example response:
 
-```
+```json
 [
     123,
     456
@@ -64,7 +64,7 @@ Gets the cart. Example response:
 
 Deletes product from the cart. Example response:
 
-```
+```json
 [
     456
 ]
@@ -74,7 +74,7 @@ Deletes product from the cart. Example response:
 
 Deletes the cart. Example response:
 
-```
+```json
 true
 ```
 
